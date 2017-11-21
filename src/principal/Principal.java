@@ -95,7 +95,6 @@ public class Principal {
 		  System.out.println(estudiante.toString());
 		  
 		
-		
 		System.out.println("fin");
 
 	}
