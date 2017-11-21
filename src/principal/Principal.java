@@ -43,7 +43,7 @@ public class Principal {
 		 * 
 		 * Profesor profe1 = new Profesor(); System.out.println(profe1);
 		 */
-		Practicas practicas = new Practicas();
+		/*Practicas practicas = new Practicas();
 		// new Practicas().muestraNumerosDe1A1000();
 		// practicas.muestraNumerosDe1A1000();
 		// practicas.muestraNumeros3(20, 25);
@@ -63,25 +63,39 @@ public class Principal {
 		String[] islas = { "GC", "LTE", "FTV", "TFE", "LPA", "GOM", "HIE" };
 		String[] meses = { "ENE", "FEB", "MAR", "ABR", "MAY", "JUN", "JUL", "AGO", "SEP", "OCT", "NOV", "DIC" };
 
-		/*
+		
 		 * int isla=2; int mes =7; System.out.println("Visitantes en "+ islas[isla]
 		 * +" : " + practicas.visitantesIslaYear(isla, visitantesYear));
 		 * System.out.println("Visitantes  en Canarias en el mes " + meses[mes]+ " : " +
 		 * practicas.visitantesMesYear(mes, visitantesYear));
-		 */
+		 
 
-	/*	String[] misDatos = { "123","abc", "345", "1x2", "990" };
+		String[] misDatos = { "123","abc", "345", "1x2", "990" };
 		//int[] res = practicas.convierteCadenasANumeros(misDatos);
 		float saldo= 1000.0f;
 		float[] movimientos= {10.0f, -5.0f,20.5f};
 		
 		float saldoFinal = practicas.calculaSaldo(saldo, movimientos);
-		*/
+		
 		int[] datos = practicas.generaAleatorios3(500, 1, 500);
 		//practicas.ordenaEnteros(datos);
 		//Arrays.sort(datos);
 		String[] cadenas =  {"perro","gato","alce"};
-		practicas.ordenaCadenas(cadenas);
+		practicas.ordenaCadenas(cadenas);*/
+		  Estudiante estAnonimo = new Estudiante(123);
+		  System.out.println(estAnonimo.toString()); 
+		  Estudiante estudiante = new Estudiante(111, "44556677G","Carlos", 'M', LocalDate.now(), 187, estAnonimo,null);
+		  Estudiante estudiante1 = new Estudiante(111, "44556677G","Manolo", 'M', LocalDate.now(), 187, estAnonimo,null);
+		  Estudiante estudiante2 = new Estudiante(111, "44556677G","Pepe", 'M', LocalDate.now(), 187, estAnonimo,null);
+		  Estudiante estudiante3 = new Estudiante(111, "44556677G","PutoAmo", 'M', LocalDate.now(), 187, estAnonimo,null);
+		  
+		  
+		  Estudiante[] listaEstudiantes ={estAnonimo,estudiante,estudiante1,estudiante2,estudiante3}; 
+		  
+		  System.out.println(estudiante.toString());
+		  
+		
+		
 		System.out.println("fin");
 
 	}
